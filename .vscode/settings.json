@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "dev",
+            "database": "\\\\wsl.localhost\\Ubuntu-22.04\\home\\blueship\\dev\\studies\\simple_crypto\\storage\\development.sqlite3"
+        }
+    ]
+}
