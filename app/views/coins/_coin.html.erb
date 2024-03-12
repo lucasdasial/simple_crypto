@@ -1,17 +1,44 @@
-<div id="<%= dom_id coin %>">
-  <p>
-    <strong>Description:</strong>
-    <%= coin.description %>
-  </p>
+<div id="<%= dom_id coin %>" class="coin" >
+  <img width="40" src=<%= coin.url_image %> alt="logo">
 
-  <p>
-    <strong>Acronym:</strong>
+
+
+<div>
+   <p>
+    <strong>Cod:</strong>
     <%= coin.acronym %>
   </p>
 
   <p>
-    <strong>Url image:</strong>
-    <%= coin.url_image %>
+    <strong>Nome</strong>
+    <%= coin.description %>
   </p>
+</div>
+
 
 </div>
+
+
+<style>
+  .coin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+    padding: 16px;
+    background-color: #f4f4f4;
+
+    text-align: center;
+    transition: 400ms;
+   
+  }
+
+  .coin:hover{
+    background-color: aliceblue;
+  }
+
+</style>

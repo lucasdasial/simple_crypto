@@ -1,14 +1,24 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Coins</h1>
+<h1>Cripto Moeda</h1>
+<p> <strong>Data</strong> <%= toDateBr(Date.today) %></p>
+<%= link_to "New coin", new_coin_path %>
 
 <div id="coins">
   <% @coins.each do |coin| %>
+
+  <a href="/coins/<%=coin.id%>">
     <%= render coin %>
-    <p>
-      <%= link_to "Show this coin", coin %>
-    </p>
+  </a>
   <% end %>
 </div>
 
-<%= link_to "New coin", new_coin_path %>
+
+
+<style>
+  #coins{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+</style>
